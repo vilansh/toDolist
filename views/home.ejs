@@ -1,0 +1,10 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+
+<% for(var i=0; i<composeData.length; i++){ %>
+    <h1><%= composeData[i].title %></h1>
+    <p><%= composeData[i].compose %></p>
+<% }; %>
+<%- include("partials/footer") -%>
